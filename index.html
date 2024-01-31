@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form action="submit.php" method="post">
+    <label for="name"> First Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="fatherName">Last Name:</label>
+    <input type="text" id="fatherName" name="fatherName" required><br><br>
+    
+
+    <label for="fusername">Username :</label>
+    <input type="text" id="fatherName" name="fatherName" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    
+    <label for="personalAddress">Personal Address:</label>
+    <textarea id="personalAddress" name="personalAddress" required></textarea><br><br>
+    
+   
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <label for="sex">Sex:</label>
+    <input type="radio" id="male" name="sex" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="sex" value="female" required>
+    <label for="female">Female</label><br>
+    
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" name="pincode" required><br><br>
+
+
+
+    <label for="mobile">Mobile No:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+    <label for="branch">Branch:</label>
+    <input type="radio" id="cse" name="branch" value="CSE" required>
+    <label for="cse">CSE</label>
+    <input type="radio" id="it" name="branch" value="IT" required>
+    <label for="it">IT</label>
+
+    <label for="languages">Languages:</label>
+      <input type="checkbox" id="english" name="languages" value="English" required>
+      <label for="english">English</label>
+      <input type="checkbox" id="tamil" name="languages" value="Tamil" required>
+      <label for="tamil">Tamil</label>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
+
+
